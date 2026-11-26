@@ -27,14 +27,14 @@ test('one round, zero rest, settings locked until reset',()=>{
  const a=setup('1','0');a.click('mainBtn');assert.equal(a.el('restSelect').disabled,true);a.time(3000);for(let i=0;i<8;i++){assert.equal(a.snapshot().state,'work');a.time(20000)}assert.equal(a.snapshot().state,'finished');assert.equal(a.count(),0);assert.equal(a.el('nextImage').hidden,true);a.click('restartBtn');assert.equal(a.el('restSelect').disabled,false);
 });
 
-test('each exercise uses a distinct local, scalable SVG illustration',()=>{
+test('each exercise uses a distinct local WebP illustration',()=>{
  const a=setup();const fs=require('node:fs'),path=require('node:path');
  const images=a.snapshot().exercises.map(e=>e.image);
  assert.equal(new Set(images).size,8);
  for(const image of images){
-  assert.match(image,/^images\/[a-z-]+\.svg$/);
-  const svg=fs.readFileSync(path.join(__dirname,'..',image),'utf8');
-  assert.match(svg,/<svg\b[^>]*viewBox=/);
-  assert.ok(!/<script\b/i.test(svg));
+  assert.match(image,/^images\/[a-z-]+\.webp$/);
+  const data=fs.readFileSync(path.join(__dirname,'..',image));
+  assert.equal(data.toString('ascii',0,4),'RIFF');
+  assert.equal(data.toString('ascii',8,12),'WEBP');
  }
 });

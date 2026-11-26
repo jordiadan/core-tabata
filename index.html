@@ -37,8 +37,8 @@ h1{font-size:28px;line-height:1.05;margin:4px 0 0}
 .progress > div{height:100%;width:0;background:white;border-radius:99px;transition:width .25s linear}
 
 .card{background:var(--card);border:1px solid var(--line);border-radius:24px;margin-top:14px;overflow:hidden;box-shadow:0 8px 24px rgba(29,22,56,.07)}
-.visual{height:clamp(180px,43vw,300px);background:white;display:flex;align-items:center;justify-content:center;padding:16px 20px}
-.visual img{display:block;width:100%;height:100%;object-fit:contain;object-position:center}
+.visual{height:clamp(220px,54vw,340px);background:#fff;display:flex;align-items:center;justify-content:center;padding:16px 20px}
+.visual img{display:block;width:100%;height:100%;object-fit:contain;object-position:center;border-radius:12px}
 .content{padding:0 18px 18px}
 .badge{display:inline-flex;align-items:center;gap:6px;background:var(--purple-soft);color:var(--purple-dark);font-size:12px;font-weight:800;border-radius:999px;padding:7px 10px}
 .exerciseName{font-size:30px;line-height:1.04;font-weight:900;letter-spacing:-.025em;margin:10px 0 8px}
@@ -89,7 +89,7 @@ button:disabled{opacity:.48}
 
 @media (max-width:480px){
   .timer{font-size:64px}
-  .visual{height:clamp(170px,48vw,230px);padding:12px 16px}
+  .visual{height:clamp(220px,60vw,285px);padding:8px 12px}
   .exerciseName{font-size:27px}
 }
 </style>
@@ -166,7 +166,7 @@ button:disabled{opacity:.48}
   </section>
 
   <section class="list" id="exerciseList"></section>
-  <p class="note">Ilustraciones: <a href="https://github.com/alexmollard/Open-Exercise-Art">Open Exercise Art</a> (CC BY-SA 4.0) y esquemas propios. <a href="images/ATTRIBUTION.md">Créditos</a>.</p>
+  <p class="note">Ilustraciones originales generadas para Core Tabata.</p>
 </div>
 
 <div class="overlay" id="finishOverlay">
@@ -185,7 +185,7 @@ const exercises = [
     "kind": "time",
     "value": 20,
     "unit": "segundos",
-    "image": "images/lying-leg-raise.svg",
+    "image": "images/lying-leg-raise.webp",
     "cue": "Lumbar pegada al suelo; controla la bajada."
   },
   {
@@ -193,7 +193,7 @@ const exercises = [
     "kind": "time",
     "value": 20,
     "unit": "segundos",
-    "image": "images/hollow-hold.svg",
+    "image": "images/hollow-hold.webp",
     "cue": "Costillas abajo y zona lumbar en contacto con el suelo."
   },
   {
@@ -201,7 +201,7 @@ const exercises = [
     "kind": "time",
     "value": 20,
     "unit": "segundos",
-    "image": "images/russian-twist.svg",
+    "image": "images/russian-twist.webp",
     "cue": "Rota desde el tronco sin colapsar la postura."
   },
   {
@@ -209,7 +209,7 @@ const exercises = [
     "kind": "time",
     "value": 20,
     "unit": "segundos",
-    "image": "images/mountain-climber.svg",
+    "image": "images/mountain-climber.webp",
     "cue": "Cadera estable; rodillas rápidas sin perder la plancha."
   },
   {
@@ -217,7 +217,7 @@ const exercises = [
     "kind": "time",
     "value": 20,
     "unit": "segundos",
-    "image": "images/plank.svg",
+    "image": "images/plank.webp",
     "cue": "Hombros sobre codos, abdomen activo y cadera neutra."
   },
   {
@@ -225,7 +225,7 @@ const exercises = [
     "kind": "time",
     "value": 20,
     "unit": "segundos",
-    "image": "images/plank-shoulder-tap.svg",
+    "image": "images/plank-shoulder-tap.webp",
     "cue": "Minimiza el balanceo de cadera al tocar hombros."
   },
   {
@@ -233,7 +233,7 @@ const exercises = [
     "kind": "time",
     "value": 20,
     "unit": "segundos",
-    "image": "images/high-side-plank-left.svg",
+    "image": "images/high-side-plank-left.webp",
     "cue": "Apoya la mano izquierda bajo el hombro. Mantén hombros, cadera y pies alineados."
   },
   {
@@ -241,7 +241,7 @@ const exercises = [
     "kind": "time",
     "value": 20,
     "unit": "segundos",
-    "image": "images/high-side-plank-right.svg",
+    "image": "images/high-side-plank-right.webp",
     "cue": "Apoya la mano derecha bajo el hombro. Mantén hombros, cadera y pies alineados."
   }
 ];
