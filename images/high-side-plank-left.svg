@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" role="img" aria-label="Plancha lateral alta sobre mano izquierda">
+<title>Plancha lateral alta · apoyo izquierdo</title>
+<g >
+<path d="M45 287H595" stroke="#ded9ec" stroke-width="5" stroke-linecap="round"/>
+<!-- Far leg, stacked above the supporting leg. -->
+<path d="M305 177L210 225 111 271" stroke="#504966" stroke-width="27" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+<path d="M111 271L83 270" stroke="#504966" stroke-width="18" stroke-linecap="round"/>
+<!-- Straight lower leg and torso; hips in line with shoulders and ankles. -->
+<path d="M310 180L213 233 109 280" stroke="#22202d" stroke-width="31" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+<path d="M109 280L75 280" stroke="#22202d" stroke-width="17" stroke-linecap="round"/>
+<path d="M302 180L415 116" stroke="#22202d" stroke-width="54" stroke-linecap="round"/>
+<!-- Neck and neutral head. -->
+<path d="M419 112L443 95" stroke="#22202d" stroke-width="22" stroke-linecap="round"/>
+<ellipse cx="466" cy="83" rx="27" ry="31" transform="rotate(26 466 83)" fill="#22202d"/>
+<!-- Supporting arm: shoulder, elbow, wrist and hand aligned vertically. -->
+<path d="M419 131L426 201 432 273" stroke="#22202d" stroke-width="19" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+<path d="M432 278L462 281" stroke="#22202d" stroke-width="15" stroke-linecap="round"/>
+<!-- Upper arm reaches toward the ceiling. -->
+<path d="M410 105L405 67 401 22" stroke="#504966" stroke-width="19" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+<path d="M401 22L401 10" stroke="#504966" stroke-width="15" stroke-linecap="round"/>
+</g>
+</svg>
